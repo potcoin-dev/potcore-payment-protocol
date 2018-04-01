@@ -1,6 +1,6 @@
 {
   "name": "potcore-payment-protocol",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Payment Protocol (BIP70 and related) support for potcore",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
