@@ -1,30 +1,30 @@
-Bitcore Payment Protocol
+Potcore Payment Protocol
 =======
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-payment-protocol.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-payment-protocol)
-[![Build Status](https://img.shields.io/travis/bitpay/bitcore-payment-protocol.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-payment-protocol)
-[![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-payment-protocol.svg?style=flat-square)](https://coveralls.io/r/bitpay/bitcore-payment-protocol)
+[![NPM Package](https://img.shields.io/npm/v/potcore-payment-protocol.svg?style=flat-square)](https://www.npmjs.org/package/potcore-payment-protocol)
+[![Build Status](https://img.shields.io/travis/potcoin-dev/potcore-payment-protocol.svg?branch=master&style=flat-square)](https://travis-ci.org/potcoin-dev/potcore-payment-protocol)
+[![Coverage Status](https://img.shields.io/coveralls/potcoin-dev/potcore-payment-protocol.svg?style=flat-square)](https://coveralls.io/r/potcoin-dev/potcore-payment-protocol)
 
-A module for [bitcore](https://github.com/bitpay/bitcore) that implements [Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki) and other related BIPs.
+A module for [potcore](https://github.com/potcoin-dev/potcore) that implements [Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki) and other related BIPs.
 
 ## Getting Started
 
 This library is distributed in both the npm and bower packaging systems.
 
 ```sh
-npm install bitcore-lib
-npm install bitcore-payment-protocol
+npm install potcore-lib
+npm install potcore-payment-protocol
 ```
 
 ```sh
-bower install bitcore-lib
-bower install bitcore-payment-protocol
+bower install potcore-lib
+bower install potcore-payment-protocol
 ```
 
-There are many examples of how to use it on the developer guide [section for payment protocol](https://bitcore.io/api/paypro). For example, the following code would verify a payment request:
+There are many examples of how to use it on the developer guide [section for payment protocol](https://potcore.io/api/paypro). For example, the following code would verify a payment request:
 
 ```javascript
-var PaymentProtocol = require('bitcore-payment-protocol');
+var PaymentProtocol = require('potcore-payment-protocol');
 
 var body = PaymentProtocol.PaymentRequest.decode(rawbody);
 var request = new PaymentProtocol().makePaymentRequest(body);
@@ -41,10 +41,10 @@ var verified = request.verify();
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/bitpay/bitcore/blob/master/CONTRIBUTING.md) on the main bitcore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/potcoin-dev/potcore/blob/master/CONTRIBUTING.md) on the main potcore repo for information about how to contribute.
 
 ## License
 
-Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/potcoin-dev/potcore/blob/master/LICENSE).
 
 Copyright 2013-2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
